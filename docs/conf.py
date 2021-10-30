@@ -1,13 +1,13 @@
-project = 'LensKit Implicit'
+project = 'LensKit TensorFlow'
 copyright = '2021 Boise State University'
 author = 'Michael D. Ekstrand'
 
-import lenskit_implicit
+import lenskit_tf
 
 # The short X.Y version
-version = '.'.join(lenskit_implicit.__version__.split('.')[:2])
+version = '.'.join(lenskit_tf.__version__.split('.')[:2])
 # The full version, including alpha/beta/rc tags
-release = lenskit_implicit.__version__
+release = lenskit_tf.__version__
 
 extensions = [
     'sphinx.ext.napoleon',

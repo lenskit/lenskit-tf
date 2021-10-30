@@ -1,21 +1,52 @@
-Implicit
-========
+TensorFlow for LensKit
+======================
 
-.. module:: lenskit_implicit
+.. module:: lenskit_tf
 
-This module provides a LensKit bridge to Ben Frederickson's implicit_ library
-implementing some implicit-feedback recommender algorithms, with an emphasis
-on matrix factorization.
+.. _TensorFlow: https://tensorflow.org
 
-It can be installed with the ``lenskit-implicit`` package::
+This package provides algorithm implementations, particularly matrix
+factorization, using TensorFlow_.  These algorithms serve two purposes:
 
-    pip install lenskit-implicit
-    conda install -c conda-forge lenskit-implicit
+* Provide classic algorithms ready to use for recommendation or as
+  baselines for new techniques.
+* Demonstrate how to connect TensorFlow to LensKit for use in your own
+  experiments.
 
-.. _implicit: https://implicit.readthedocs.io/en/latest/
+To install::
 
-.. autoclass:: ALS
-    :members:
+    pip install lenskit-tf
+
+Or (preferred, once published)::
+
+    conda install -c conda-forge lenskit-tf
+
+.. warning::
+    These implementations are not yet battle-tested --- they are here
+    primarily for demonstration purposes at this time.
+
+.. toctree::
+    :caption: Contents
+
+Biased MF
+---------
+
+These models implement the standard biased matrix factorization model, like
+:py:class:`lenskit.algorithms.als.BiasedMF`, but learn the model parameters
+using TensorFlow's gradient descent instead of the alternating least squares
+algorithm.
+
+Bias-Based
+~~~~~~~~~~
+
+.. autoclass:: BiasedMF
+
+Fully Integrated
+~~~~~~~~~~~~~~~~
+
+.. autoclass:: IntegratedBiasMF
+
+Bayesian Personalized Rating
+----------------------------
 
 .. autoclass:: BPR
-    :members:
