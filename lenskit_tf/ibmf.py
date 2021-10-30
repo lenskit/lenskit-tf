@@ -9,7 +9,7 @@ except ImportError:
     tf = None
 
 from lenskit import util
-from .. import Predictor
+from lenskit.algorithms import Predictor
 from .util import init_tf_rng, check_tensorflow
 
 _log = logging.getLogger(__name__)
