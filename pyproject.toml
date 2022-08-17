@@ -58,5 +58,6 @@ exclude = [
 
 [tool.conda-lock]
 channels = [
-    "conda-forge"
+    "conda-forge",
+    "lenskit",
 ]
