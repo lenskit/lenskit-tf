@@ -20,7 +20,7 @@ readme = "README.md"
 license = { file="LICENSE.md" }
 requires-python = ">= 3.7"
 dependencies = [
-    "lenskit[doc] @ git+https://github.com/lenskit/lkpy.git#main",
+    "lenskit ==0.14.*",
     "tensorflow >=2,<2.6"
 ]
 dynamic = ["description", "version"]
