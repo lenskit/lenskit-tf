@@ -35,9 +35,8 @@ test = [
     "pytest-doctestplus >= 0.9",
 ]
 dev = [
+    "lenskit-build-helpers >=0.1",
     "flit >= 3.2",
-    "conda-lock",
-    "invoke",
     "flake8 >= 3",
     "coverage >= 5",
     "pytest-cov >= 2.12",
