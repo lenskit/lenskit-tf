@@ -41,6 +41,10 @@ jobs:
       run: |
         numba -s
 
+    - name: Fetch data
+      run: |
+        lkbuild fetch-data -d ml-100k
+
     - name: Run tests
       run: |
         python -m pytest --cov=lenskit_tf -v
