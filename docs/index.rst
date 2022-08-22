@@ -28,25 +28,5 @@ Or (preferred, once published)::
 .. toctree::
     :caption: Contents
 
-Biased MF
----------
-
-These models implement the standard biased matrix factorization model, like
-:py:class:`lenskit.algorithms.als.BiasedMF`, but learn the model parameters
-using TensorFlow's gradient descent instead of the alternating least squares
-algorithm.
-
-Bias-Based
-~~~~~~~~~~
-
-.. autoclass:: BiasedMF
-
-Fully Integrated
-~~~~~~~~~~~~~~~~
-
-.. autoclass:: IntegratedBiasMF
-
-Bayesian Personalized Rating
-----------------------------
-
-.. autoclass:: BPR
+    biased-mf
+    bpr
